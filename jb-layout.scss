@@ -1,0 +1,15 @@
+@import "./bass";
+.jb-layout {
+    .jb-layout-top {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 986;
+        .logo {}
+        .nav {}
+        .profile {}
+    }
+    .jb-layout-nav {}
+    .jb-layout-opt {}
+    .jb-layout-main {}
+}
