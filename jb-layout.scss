@@ -1,15 +1,30 @@
 @import "./base";
 .jb-layout {
+    height: auto;
+    min-height: 100%;
     .jb-layout-top {
         position: fixed;
         top: 0;
         width: 100%;
         z-index: 986;
+        height: 50px;
         .logo {}
         .nav {}
         .profile {}
+        .jb-layout-nav {
+            overflow: hidden;
+            width: 280px;
+            position: absolute;
+            bottom: 0;
+            top: 100%;
+            z-index: 990;
+            height: calc(100vh - 100%);
+            background-color: #eef1f6;
+        }
     }
-    .jb-layout-nav {}
     .jb-layout-opt {}
-    .jb-layout-main {}
+    .jb-layout-main {
+        margin-left: 280px;
+        margin-top: 50px;
+    }
 }
