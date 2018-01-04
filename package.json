@@ -1,0 +1,17 @@
+{
+  "name": "jb-style",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eynStudio/jb-style.git"
+  },
+  "author": "pengshengwang@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eynStudio/jb-style/issues"
+  },
+  "homepage": "https://github.com/eynStudio/jb-style#readme"
+}
