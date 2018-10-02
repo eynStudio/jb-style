@@ -1,2 +1,22 @@
+$hd: 1px !default;
+
 $white: #fff !default;
 $black: #000 !default;
+
+$primary: #108ee9 !default; // 全局主色
+$success: #6abf47 !default; // 成功色
+$info: #17a2b8 !default; // 信息色
+$warning: #ffc600 !default; // 警告色
+$error: #f4333c !default; // 错误色
+
+$theme-colors: () !default;
+$theme-colors: map-merge(
+  (
+    'primary': $primary,
+    'success': $success,
+    'info': $info,
+    'warning': $warning,
+    'error': $error
+  ),
+  $theme-colors
+);

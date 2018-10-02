@@ -5,14 +5,16 @@
 		"../src/index.scss",
 		"../src/_variables.scss",
 		"../src/_utils.scss",
-		"../src/utils/_text.scss"
+		"../src/utils/_text.scss",
+		"../src/utils/_flex.scss"
 	],
 	"sourcesContent": [
 		"@import 'variables';\n@import 'utils';\n",
-		"$white: #fff !default;\n$black: #000 !default;\n",
-		"@import 'utils/text';\n",
-		".text-white {\n  color: $white !important;\n}\n"
+		"$hd: 1px !default;\n\n$white: #fff !default;\n$black: #000 !default;\n\n$primary: #108ee9 !default; // 全局主色\n$success: #6abf47 !default; // 成功色\n$info: #17a2b8 !default; // 信息色\n$warning: #ffc600 !default; // 警告色\n$error: #f4333c !default; // 错误色\n\n$theme-colors: () !default;\n$theme-colors: map-merge(\n  (\n    'primary': $primary,\n    'success': $success,\n    'info': $info,\n    'warning': $warning,\n    'error': $error\n  ),\n  $theme-colors\n);\n",
+		"@import 'utils/text';\n@import 'utils/flex';\n",
+		"// Color\n\n.text-white {\n  color: $white !important;\n}\n\n@each $color, $value in $theme-colors {\n  .text-#{$color} {\n    color: $color !important;\n  }\n}\n\n// Alignment\n\n.text-justify {\n  text-align: justify !important;\n}\n.text-nowrap {\n  white-space: nowrap !important;\n}\n\n// Transformation\n\n.text-lowercase {\n  text-transform: lowercase !important;\n}\n.text-uppercase {\n  text-transform: uppercase !important;\n}\n.text-capitalize {\n  text-transform: capitalize !important;\n}\n\n// Weight and italics\n\n// .font-weight-light   { font-weight: $font-weight-light !important; }\n// .font-weight-lighter { font-weight: $font-weight-lighter !important; }\n// .font-weight-normal  { font-weight: $font-weight-normal !important; }\n// .font-weight-bold    { font-weight: $font-weight-bold !important; }\n// .font-weight-bolder  { font-weight: $font-weight-bolder !important; }\n.font-italic {\n  font-style: italic !important;\n}\n",
+		""
 	],
 	"names": [],
-	"mappings": "AGAA,AAAA,WAAW,CAAC;EACV,KAAK,EFDC,IAAI,CECI,UAAU;CACzB"
+	"mappings": "AGEA,AAAA,WAAW,CAAC;EACV,KAAK,EFDC,IAAI,CECI,UAAU;CACzB;;AAGC,AAAA,aAAa,CAAG;EACd,KAAK,EFML,SAAS,CENK,UAAU;CACzB;;AAFD,AAAA,aAAa,CAAG;EACd,KAAK,EFOL,SAAS,CEPK,UAAU;CACzB;;AAFD,AAAA,UAAU,CAAM;EACd,KAAK,EFQL,MAAM,CERQ,UAAU;CACzB;;AAFD,AAAA,aAAa,CAAG;EACd,KAAK,EFSL,SAAS,CETK,UAAU;CACzB;;AAFD,AAAA,WAAW,CAAK;EACd,KAAK,EFUL,OAAO,CEVO,UAAU;CACzB;;AAKH,AAAA,aAAa,CAAC;EACZ,UAAU,EAAE,kBAAkB;CAC/B;;AACD,AAAA,YAAY,CAAC;EACX,WAAW,EAAE,iBAAiB;CAC/B;;AAID,AAAA,eAAe,CAAC;EACd,cAAc,EAAE,oBAAoB;CACrC;;AACD,AAAA,eAAe,CAAC;EACd,cAAc,EAAE,oBAAoB;CACrC;;AACD,AAAA,gBAAgB,CAAC;EACf,cAAc,EAAE,qBAAqB;CACtC;;AASD,AAAA,YAAY,CAAC;EACX,UAAU,EAAE,iBAAiB;CAC9B"
 }
