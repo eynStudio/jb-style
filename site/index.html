@@ -4,36 +4,11 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>教育服务平台</title>
+    <title>jb-style</title>
 </head>
 
 <body>
     <div id="root"></div>
-    <!-- Dependencies -->
-    <!-- <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script> -->
-    <!-- <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script> -->
-
-    <script crossorigin src="./sdk/json2.js"></script>
-    <script crossorigin src="./sdk/spark-md5.js"></script>
-    <script crossorigin src="./sdk/webim.js"></script>
-    <script crossorigin src="./sdk/TScreenCapture-mini.js"></script>
-    <script>
-        var imgType = "png";
-        var iidx = 0;
-        var objsc = new TScreenCapture(imgType, "#000");
-
-        function sc(op, op2) {
-            objsc.Register("", function (dat) {
-                if (dat.STAT == -99 || dat == -99) {
-                    if (confirm("您还没有安装截屏插件\n\n现在下载安装吗？")) {
-                        location = "/sdk/TScreenCapture.exe";
-                    }
-                } else {
-                    objsc.start(op, op2);
-                }
-            })
-        }
-    </script>
 </body>
 
 </html>
