@@ -1,0 +1,18 @@
+{
+	"version": 3,
+	"file": "jb-style.css",
+	"sources": [
+		"../src/index.scss",
+		"../src/_variables.scss",
+		"../src/_utils.scss",
+		"../src/utils/_text.scss"
+	],
+	"sourcesContent": [
+		"@import 'variables';\n@import 'utils';\n",
+		"$white: #fff !default;\n$black: #000 !default;\n",
+		"@import 'utils/text';\n",
+		".text-white {\n  color: $white !important;\n}\n"
+	],
+	"names": [],
+	"mappings": "AGAA,AAAA,WAAW,CAAC;EACV,KAAK,EFDC,IAAI,CECI,UAAU;CACzB"
+}

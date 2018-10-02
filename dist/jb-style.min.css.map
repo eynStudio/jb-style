@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/utils/_text.scss"],"names":[],"mappings":"AAAA,YACE,MAAA","sourcesContent":[".text-white {\n  color: $white !important;\n}\n"]}
