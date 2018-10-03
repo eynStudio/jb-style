@@ -1,0 +1,17 @@
+@each $color, $value in $theme-colors {
+  .bg-#{$color} {
+    background-color: $value !important;
+  }
+}
+
+.bg-fff {
+  background-color: #fff !important;
+}
+
+.bg-white {
+  background-color: $white !important;
+}
+
+.bg-none {
+  background-color: transparent !important;
+}
