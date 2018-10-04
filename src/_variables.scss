@@ -56,3 +56,7 @@ $zindex-modal-backdrop: 1040 !default;
 $zindex-modal: 1050 !default;
 $zindex-popover: 1060 !default;
 $zindex-tooltip: 1070 !default;
+
+$border-width: $hd !default;
+$border-color: #dee2e6 !default;
+$border-radius: 4 * $hd !default;
